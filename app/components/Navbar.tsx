@@ -51,6 +51,12 @@ export default function Navbar() {
                     <button className="px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-0.5">
                         Explore Ecosystem
                     </button>
+                    <Link
+                        href={`https://accounts.oruzen.com/signin?redirect_url=${typeof window !== "undefined" ? window.location.origin : ""}`}
+                        className="px-4 py-2 border border-primary/20 hover:border-primary/40 text-sm font-semibold text-primary rounded-lg transition-all"
+                    >
+                        Sign In
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -96,6 +102,13 @@ export default function Navbar() {
                             <button className="w-full py-3 bg-primary text-white font-medium rounded-lg">
                                 Explore Ecosystem
                             </button>
+                            <Link
+                                href={`https://accounts.oruzen.com/signin?redirect_url=${typeof window !== "undefined" ? window.location.origin : ""}`}
+                                className="w-full py-3 border border-primary/20 text-center font-semibold text-primary rounded-lg"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Sign In
+                            </Link>
                         </div>
                     </motion.div>
                 )}
