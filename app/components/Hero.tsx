@@ -40,9 +40,9 @@ export default function Hero() {
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <button className="px-8 py-4 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-all transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                            <a href="https://accounts.oruzen.com/signup" className="px-8 py-4 bg-primary text-white font-medium rounded-lg hover:bg-slate-800 transition-all text-center transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
                                 Start Building
-                            </button>
+                            </a>
                             <button className="px-8 py-4 bg-white/80 backdrop-blur-sm text-text-main border border-border font-medium rounded-lg hover:bg-white transition-all">
                                 Learn More
                             </button>

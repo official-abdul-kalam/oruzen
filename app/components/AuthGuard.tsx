@@ -10,7 +10,7 @@ export default function AuthGuard({ children }: { children: React.ReactNode }) {
         const token = getSharedAuthCookie();
         if (!token) {
             const currentUrl = window.location.href;
-            const authUrl = `https://auth.oruzen.com/signin?redirect_url=${encodeURIComponent(currentUrl)}`;
+            const authUrl = `https://account.oruzen.com/signin?redirect_url=${encodeURIComponent(currentUrl)}`;
             window.location.href = authUrl;
         } else {
             setIsAuthenticated(true);
