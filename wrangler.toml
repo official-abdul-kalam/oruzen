@@ -6,4 +6,4 @@ pages_build_output_dir = "out"
 [[d1_databases]]
 binding = "DB"
 database_name = "oruzen_db"
-database_id = "your-database-id"
+database_id = "f0ac01e9-c0aa-4577-bd99-1c164ebcb838"
