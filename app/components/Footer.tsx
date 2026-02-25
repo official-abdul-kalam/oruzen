@@ -22,12 +22,12 @@ export default function Footer() {
                         </p>
                         <div className="flex gap-4">
                             {[
-                                { icon: <Twitter size={18} />, href: "#" },
-                                { icon: <Github size={18} />, href: "#" },
-                                { icon: <Linkedin size={18} />, href: "#" },
-                                { icon: <Mail size={18} />, href: "#" },
+                                { icon: <Twitter size={18} />, href: "https://twitter.com/oruzenlab" },
+                                { icon: <Github size={18} />, href: "https://github.com/oruzenlab" },
+                                { icon: <Linkedin size={18} />, href: "https://linkedin.com/company/oruzenlab" },
+                                { icon: <Mail size={18} />, href: "mailto:hello@oruzen.com" },
                             ].map((social, i) => (
-                                <a key={i} href={social.href} className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 border border-white/10">
+                                <a key={i} href={social.href} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 border border-white/10">
                                     {social.icon}
                                 </a>
                             ))}
@@ -79,8 +79,8 @@ export default function Footer() {
                         © {new Date().getFullYear()} Oruzen Inc. All rights reserved.
                     </div>
                     <div className="flex gap-8 text-sm text-slate-500">
-                        <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+                        <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</a>
                         <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
                     </div>
                 </div>
