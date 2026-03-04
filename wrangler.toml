@@ -1,0 +1,9 @@
+name = "oruzen"
+compatibility_date = "2024-04-03"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "out"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "oruzen_db"
+database_id = "f0ac01e9-c0aa-4577-bd99-1c164ebcb838"
